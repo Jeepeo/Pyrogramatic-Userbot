@@ -11,7 +11,7 @@ from distutils.util import strtobool as sb
 
 from dotenv import load_dotenv
 from requests import get
-from telethon import TelegramClient
+from pyrogram import Client
 
 
 load_dotenv("config.env")
@@ -76,7 +76,7 @@ YOUTUBE_API_KEY = os.environ.get(
     "YOUTUBE_API_KEY", None
     )
 
-bot = TelegramClient("userbot", API_KEY, API_HASH)
+bot = Client("userbot", API_KEY, API_HASH)
 
 
 if os.path.exists("brains.check"):

@@ -29,6 +29,6 @@ LOGS.info("Your Bot is alive! Test it by typing .alive on any chat."
 LOGS.info("Your Bot Version is 2.4.1")
 
 if len(argv) not in (1, 3, 4):
-    bot.disconnect()
+    bot.stop()
 else:
-    bot.run_until_disconnected()
+    pass
